@@ -1,32 +1,43 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+	<router-view />
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import '~normalize.css';
+
+@font-face {
+	font-family: 'Raleway';
+	src: local('Raleway'), url('./assets/fonts/Raleway.ttf');
+	font-variation-settings: 'wdth' 400, 'wght' 98;
+	font-display: swap;
 }
 
-#nav {
-  padding: 30px;
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat'), url('./assets/fonts/Montserrat-Regular.ttf');
+	font-weight: 400;
+	font-display: swap;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat'), url('./assets/fonts/Montserrat-SemiBold.ttf');
+	font-weight: 500;
+	font-display: swap;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat'), url('./assets/fonts/Montserrat-Bold.ttf');
+	font-weight: 600;
+	font-display: swap;
+}
+
+#app {
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
 }
 </style>
