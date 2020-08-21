@@ -1,9 +1,18 @@
 <template>
-	<router-view />
+	<div>
+		<router-view />
+	</div>
 </template>
+
+<script>
+export default {};
+</script>
 
 <style lang="scss">
 @import '~normalize.css';
+
+@import 'assets/styles/light.css' (prefers-color-scheme: light);
+@import 'assets/styles/dark.css' (prefers-color-scheme: dark);
 
 @font-face {
 	font-family: 'Raleway';
@@ -33,11 +42,19 @@
 	font-display: swap;
 }
 
-#app {
+body {
 	font-family: 'Raleway', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
-	color: #2c3e50;
+	color: var(--font-body-colour);
+	background: var(--background-colour);
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
 }
 </style>

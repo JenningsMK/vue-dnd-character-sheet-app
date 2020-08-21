@@ -1,11 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 
+import { updateTitle, insertMetaTags } from './insertMetaTags.ts';
+
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'DnD Player App',
+      metaTags: [
+        {
+          name: 'color-scheme',
+          content: 'light dark'
+        }
+      ]
+    }
   },
   {
     path: '/about',
@@ -21,6 +32,13 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+});
+
+router.beforeEach((to, from, next) => {
+  updateTitle(to);
+  insertMetaTags(to);
+
+  next();
 });
 
 export default router;
