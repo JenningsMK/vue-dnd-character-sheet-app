@@ -1,21 +1,9 @@
 {
   "name": "vue-dnd-character-sheet-app",
   "version": "0.1.0",
-  "description": "A small app to create and display your D&D characters",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JenningsMK/vue-dnd-character-sheet-app.git"
-  },
-  "keywords": [
-    "DnD",
-    "Vue"
-  ],
+  "description": "A small app to create and display your D&D characters",
   "author": "Mark Jennings",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JenningsMK/vue-dnd-character-sheet-app/issues"
-  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -30,14 +18,19 @@
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "^4.5.4",
     "@vue/cli-plugin-unit-jest": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.4",
     "@vue/compiler-sfc": "^3.0.0-0",
     "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
     "@vue/test-utils": "^2.0.0-0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
@@ -48,5 +41,17 @@
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
     "vue-jest": "^5.0.0-0"
+  },
+  "bugs": {
+    "url": "https://github.com/JenningsMK/vue-dnd-character-sheet-app/issues"
+  },
+  "keywords": [
+    "DnD",
+    "Vue"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JenningsMK/vue-dnd-character-sheet-app.git"
   }
 }

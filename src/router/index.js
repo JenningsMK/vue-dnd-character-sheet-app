@@ -35,8 +35,8 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  updateTitle(to);
-  insertMetaTags(to);
+  updateTitle(to.meta);
+  insertMetaTags(to.meta);
 
   next();
 });
