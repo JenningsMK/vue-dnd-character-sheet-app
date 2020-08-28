@@ -1,21 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
+import CharacterSelection from '../views/CharacterSelection.vue';
 
-import { updateTitle, insertMetaTags } from './insertMetaTags.ts';
+import { updateTitle } from './insertMetaTags';
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
+    name: 'CharacterSelection',
+    component: CharacterSelection,
     meta: {
-      title: 'DnD Player App',
-      metaTags: [
-        {
-          name: 'color-scheme',
-          content: 'light dark'
-        }
-      ]
+      title: 'DnD Player App'
     }
   },
   {
@@ -35,8 +29,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  updateTitle(to.meta);
-  insertMetaTags(to.meta);
+  updateTitle(to);
 
   next();
 });

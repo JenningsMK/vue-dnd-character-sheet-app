@@ -2,6 +2,7 @@
  * @file insertMetaTags
  * Function to insert meta information into the head of a page
  */
+import { RouteLocationNormalized } from 'vue-router';
 
 interface MetaInfo {
   title: string;
@@ -13,9 +14,11 @@ interface MetaInfo {
 /**
  * Update the page title
  */
-const updateTitle = (page: MetaInfo): void => {
-  if (page.title != null) {
-    document.title = page.title;
+const updateTitle = (page: RouteLocationNormalized): void => {
+  const { title } = page.meta;
+
+  if (title != null) {
+    document.title = title;
   }
 };
 

@@ -1,6 +1,6 @@
 :root {
-	--font-body-colour: #2c3e50;
-	--font-heading-colour: #2c3e50;
+	--font-body-colour: 44, 62, 80;
+	--font-heading-colour: 44, 62, 80;
 
-	--background-colour: azure;
+	--background-colour: 240, 255, 255;
 }

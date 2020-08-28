@@ -9,8 +9,10 @@ What I would like to achieve with this app is for it to that support offline mod
 * [Vue][2]
 * Offline mode
 * Light/Dark mode with support for high contrast
+* Testing with [Jest][3]
 
 This app is going to be bit of a playground for me, so it could be interesting to see what happens.
 
 [1]: https://dnd.wizards.com/
 [2]: https://vuejs.org/
+[3]: https://jestjs.io/

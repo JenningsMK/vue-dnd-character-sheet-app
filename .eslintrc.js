@@ -1,16 +1,22 @@
 module.exports = {
   root: true,
+
   env: {
     node: true
   },
-  extends: ['plugin:vue/vue3-essential', 'eslint:recommended', '@vue/prettier'],
+
   parserOptions: {
     parser: 'babel-eslint'
   },
+
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'vue/attributes-order': 'warn',
+    'vue/no-confusing-v-for-v-if': 'warn',
+    'vue/no-v-html': 'warn',
+    'vue/order-in-components': 'warn',
+    'vue/this-in-template': 'warn'
   },
+
   overrides: [
     {
       files: [
@@ -21,5 +27,12 @@ module.exports = {
         jest: true
       }
     }
+  ],
+
+  extends: [
+    'plugin:vue/strongly-recommended',
+    'eslint:recommended',
+    '@vue/prettier',
+    '@vue/typescript'
   ]
 };

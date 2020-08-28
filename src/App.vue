@@ -46,9 +46,9 @@ body {
 	font-family: 'Raleway', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: var(--font-body-colour);
-	background: var(--background-colour);
+	color: rgb(var(--font-body-colour));
+	background: rgb(var(--background-colour));
+	padding: 1rem;
 }
 
 h1,

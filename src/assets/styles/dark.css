@@ -1,6 +1,6 @@
 :root {
-	--font-body-colour: darkgrey;
-	--font-heading-colour: darkgrey;
+	--font-body-colour: 169, 169, 169;
+	--font-heading-colour: 255, 64, 64;
 
-	--background-colour: #182029;
+	--background-colour: 24, 32, 41;
 }
