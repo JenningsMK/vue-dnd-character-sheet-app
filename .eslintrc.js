@@ -14,7 +14,21 @@ module.exports = {
     'vue/no-confusing-v-for-v-if': 'warn',
     'vue/no-v-html': 'warn',
     'vue/order-in-components': 'warn',
-    'vue/this-in-template': 'warn'
+    'vue/this-in-template': 'warn',
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: 1
+      }
+    ],
+    'vue/html-indent': [ 'error', 'tab'],
+    'vue/html-self-closing': [ 'warn', {
+      'html': {
+        'void': 'always',
+        'normal': 'never',
+        'component': 'always'
+      }
+    }]
   },
 
   overrides: [
@@ -32,7 +46,6 @@ module.exports = {
   extends: [
     'plugin:vue/strongly-recommended',
     'eslint:recommended',
-    '@vue/prettier',
     '@vue/typescript'
   ]
 };

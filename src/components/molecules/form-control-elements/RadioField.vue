@@ -9,7 +9,7 @@
 			:id="id"
 			:name="name"
 			:value="value"
-			:checked="false"
+			:checked="checked"
 		/>
 	</div>
 </template>
