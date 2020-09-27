@@ -1,6 +1,7 @@
 <template>
 	<input
 		:id="`labeled-by:${id}`"
+		class="u-visually-hidden"
 		type="radio"
 		:name="name"
 		:value="value"
@@ -36,7 +37,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-
-</style>

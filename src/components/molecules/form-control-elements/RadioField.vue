@@ -1,16 +1,18 @@
 <template>
-	<div class="form-element">
+	<div :class="$style['form-element']">
 		<form-label
 			:id="id"
-			:label="label"
-		/>
+			:type="'radio'"
+		>
+			<input-radio
+				:id="id"
+				:name="name"
+				:value="value"
+				:checked="checked"
+			/>
 
-		<input-radio
-			:id="id"
-			:name="name"
-			:value="value"
-			:checked="checked"
-		/>
+			{{ label }}
+		</form-label>
 	</div>
 </template>
 
@@ -54,7 +56,3 @@ name: "RadioField",
   }
 }
 </script>
-
-<style scoped>
-
-</style>
