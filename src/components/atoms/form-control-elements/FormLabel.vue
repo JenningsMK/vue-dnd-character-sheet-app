@@ -46,6 +46,7 @@ export default {
 	cursor: pointer;
 	justify-content: space-between;
 	padding: calc(var(--font-size) / 2) var(--font-size);
+	padding-left: 0;
 }
 
 .input-label .icon {

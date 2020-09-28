@@ -13,6 +13,7 @@ export default {};
 
 @import 'assets/styles/light.module.css' (prefers-color-scheme: light);
 @import 'assets/styles/dark.module.css' (prefers-color-scheme: dark);
+@import 'assets/styles/variables.module.css';
 
 @font-face {
 	font-family: 'Raleway';

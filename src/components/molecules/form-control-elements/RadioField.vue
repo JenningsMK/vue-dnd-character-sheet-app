@@ -1,5 +1,5 @@
 <template>
-	<div :class="$style['form-element']">
+	<div>
 		<form-label
 			:id="id"
 			:type="'radio'"
@@ -23,7 +23,7 @@
 export default {
 name: "RadioField",
   components: {
-  InputRadio,
+    InputRadio,
     FormLabel
   },
 
