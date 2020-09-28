@@ -11,8 +11,8 @@ export default {};
 <style lang="scss">
 @import '~normalize.css';
 
-@import 'assets/styles/light.css' (prefers-color-scheme: light);
-@import 'assets/styles/dark.css' (prefers-color-scheme: dark);
+@import 'assets/styles/light.module.css' (prefers-color-scheme: light);
+@import 'assets/styles/dark.module.css' (prefers-color-scheme: dark);
 
 @font-face {
 	font-family: 'Raleway';
