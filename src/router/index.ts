@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import CharacterSelection from '../views/CharacterSelection.vue';
+import About from '../views/About.vue';
 
 import { updateTitle } from './insertMetaTags';
 
 const routes = [
   {
     path: '/',
-    name: 'CharacterSelection',
-    component: CharacterSelection,
+    name: 'About',
+    component: About,
     meta: {
       title: 'DnD Player App'
     }
